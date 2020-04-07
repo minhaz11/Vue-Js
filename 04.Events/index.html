@@ -15,7 +15,7 @@
         <button v-on:dblclick="add(10)">Add age 10</button>
         <button v-on:dblclick="sub(10)">Subtract age 10</button>
         <p>Age is: {{age}}</p>
-        <div id="canvas" v-on:mousemove="updateXY">
+        <div id="canvas" @mousemove="updateXY">
             {{x}},{{y}}
         </div>
     </div>

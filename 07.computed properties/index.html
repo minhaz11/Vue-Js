@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <title>Vue App</title>
+</head>
+<body>
+    <div id="app" class="text-center">
+        <h1>Computed Properties</h1>
+        <button class="btn btn-primary" @click="a++">add to A</button>
+        <button class="btn btn-warning" @click="b++">add to B</button>
+        <p>A->{{a}}</p>
+        <p>B->{{b}}</p>
+        <p>Age + A = {{addToA}}</p>
+        <p>Age + B = {{addToB}}</p>
+        
+    </div>
+<script src="app.js"></script>
+<script src="../bootstrap.min.js"></script>
+</body>
+</html> 
