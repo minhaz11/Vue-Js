@@ -1,0 +1,18 @@
+span{
+    background:blue;
+    width: 115px;
+    height: 99px;
+    margin: 25px;
+    color: white;
+    display: inline-block;
+}
+
+.available span{
+    background:green;
+}
+
+.nearby span:after{
+    content: "nearby";
+    
+
+}

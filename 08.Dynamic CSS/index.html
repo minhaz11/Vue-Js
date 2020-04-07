@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <title>Vue App</title>
+</head>
+<body>
+    <div id="app" class="text-center">
+        <h1>Dynamic CSS</h1>
+        <h2>Example 1</h2>
+        <div @click="available=!available" :class="{available:available}">
+            <span>Dynamic</span>
+        </div>  
+        <h2>Example 2</h2>
+        <button @click="nearby=!nearby" class="btn btn-primary">Toggle Nearby</button>
+        <button @click="available=!available" class="btn btn-warning">Toggle Available</button>
+        <div :class="compClass">
+            <span>Dynamic </span>
+        </div>
+    </div>
+<script src="app.js"></script>
+<script src="../bootstrap.min.js"></script>
+</body>
+</html> 
