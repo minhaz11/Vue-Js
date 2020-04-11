@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="vue.js"></script>
+    <title>Punch Bag</title>
+</head>
+<body>
+    <div id="app">
+        <!--Bag image-->
+        <div id="bag" v-bind:class="{burst:ended}"></div>
+        <!--Bag health-->
+        <div id="bag-health">
+          <div v-bind:style="{width:health+'%'}"></div>
+        </div>
+        <!--game controls-->
+        <div id="controls" class="d-flex justify-content">
+            <button @click="punch" class="btn btn-outline-success" v-show="!ended" >Punch</button>
+            <button @click="restart" class="btn btn-outline-primary">Restart</button>
+        </div>
+
+    </div>
+<script src="app.js"></script>
+<!-- <script src="../bootstrap.min.js"></script> -->
+</body>
+</html>
